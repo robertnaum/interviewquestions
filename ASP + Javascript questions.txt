@@ -1,0 +1,48 @@
+1. The Request Object has five collections by which values can be accessed. Name then.
+Querystring, Form, Cookies, ServerVariables & ClientCertificate
+
+2. What is the difference between Querystring collection and Form collection? 
+The main difference is that the Querystring collection gets appended to a URL.
+
+3. What is ServerVariables collection? 
+The ServerVariables collection holds the entire HTTP headers and also additional items of information about the server.
+
+4. Which is the default Data types in VBScript? 
+Variant is the default data type in VBScript, which can store a value of any type.
+
+5. What are the ASP Scripting Objects? 
+The Dictionary object, the FileSystemObject object, TextStream object.
+
+6. What are the event handlers of Application Object? 
+Application_OnStart- This event will be fired when the first visitor hits the page.
+Application_OnEnd- This event runs when the server is stopped.
+
+7. What are 2 effects of using Option Explicit? 
+To avoid multiple variables of the same name. 
+This statement force the declaration of variables in VB before using them. 
+
+8. Name as many Javascript data types as you can:
+Undefined, Null, Boolean, String, Symbol, Number, Object
+
+9. How do you clone an object in Javascript?
+Object.assign() method is used for cloning an object in javascript
+var x = {myProp: "value"};
+var y = Object.assign({}, x); 
+	
+10. How do you redirect a URL in Javascript?
+window.location
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+1. What is the difference between an abstract class and an interface?
+An abstract class is always used as a base class. 
+An interface, on the other hand, can declare properties, methods and events only (no access modifiers). The developer must implement all declared members. In short, an interface designates a contract/behavior that implementing classes should have.
+
+2. Define LINQ?
+LINQ stands for Language Integrated Query. Offers developers a way to manipulate data using a succinct yet expressive syntax
+
+3. How do you prevent a class from being inherited?
+In VB.NET you use the NotInheritable modifier to prevent programmers from using the class as a base class. In C#, use the sealed keyword.
+
+4. In .NET what is the difference between Overloading and Overriding?
+Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
+Overriding is a principle that allows you to change the functionality of a method in a child class.
+
+5. In MVC, what does the M, the V, and the C stand for and which is routed to first.
+Model, View, Controller(1st)
+
+6. What is the difference between DataReader and DataSet?
+DataReader - better performance, cannot modify data, read-only
+DataSet - modify data, read/write, slower performance
+
+7. For error handling, in a try-catch-finally block, if there’s no error, does the Finally block still execute?
+YES
+
+8. How can you reference an external config file in web.config?
+configsource
+
+9. What is the difference between NameSpace and Assembly?
+A Namespace is a logical naming scheme for types in which a simple type name, such as MyType, is preceded with a dot-separated hierarchical name.  A single assembly may contain types whose hierarchical names have different namespace roots, and a logical namespace root may span multiple assemblies.
+Namespace can span multiple assemblies
+Namespace can logically groups class
+Assembly is a physical grouping of logical units
+
+10. Public is one of 5 access modifiers in .NET. Name the other 4.
+Private, Protected, Internal, Protected Internal
+
+11. What is the difference between a Value Type and Reference Type?
+A Value Type stores its contents in memory allocated on the stack. 
+Reference Types are used by a reference which holds an (address) to the object but not the object itself on the heap.
+
+12. What is the difference between a Response.Redirect and Server.Transfer?
+Response.Redirect redirects page to another page after first page arrives to client. So client knows the redirection.  Server.Transfer quits current execution of the page. Client does not know the redirection. It allows you to transfer the query string and form variables.
+
+13. What are 3 different subtypes of ActionResult?
+ViewResult, PartialViewResult, RedirectToRouteResult, RedirectResult, JavascriptResult, JSONResult, FileResult, HttpStatusCodeResult
+
+14. How can a view be shared across multiple controllers?
+We can put the view in the “Shared” folder.
+
+15. What is a Generic Type Constraint in .NET? Give an example.
+Constraints inform the compiler about the capabilities a type argument must have.
+where T: class, where T: struct, where T: interface, where T: new()
+public class GenericList<T> where T : Employee
+
+16. By default, Web API sends HTTP response with which HTTP status code for all uncaught exceptions?
+500 - Internal Server Error
+
+
+
+
+
+
+
