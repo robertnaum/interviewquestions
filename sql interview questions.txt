@@ -19,7 +19,7 @@ A correlated subquery is a subquery (a query nested inside another query) that u
 6. In SQL, SUM is an example of an aggregate function.  Name 2 more aggregate functions.
 AVG, COUNT, COUNT_BIG, MAX, MIN, STDEV, VARIANCE
 
-7. What is the difference between ‘HAVING’ CLAUSE and a ‘WHERE’ CLAUSE?
+7. What is the difference between â€˜HAVINGâ€™ CLAUSE and a â€˜WHEREâ€™ CLAUSE?
 WHERE clause is used for filtering rows and it applies on each and every row, while HAVING clause is used to filter groups in SQL. 
 
 8. Define the 3 types of user-defined functions
@@ -50,5 +50,8 @@ SELECT TOP (1) Height FROM
   SELECT TOP (10) Height FROM Mountain ORDER BY Height DESC
 ) AS Mt ORDER BY Height
 
+
+FREEFORM
+Tell me what is your proudest project and what role did you play in that?
 
 
