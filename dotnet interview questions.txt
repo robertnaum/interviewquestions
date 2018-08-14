@@ -19,7 +19,7 @@ Model, View, Controller(1st)
 DataReader - better performance, cannot modify data, read-only
 DataSet - modify data, read/write, slower performance
 
-7. For error handling, in a try-catch-finally block, if thereís no error, does the Finally block still execute?
+7. For error handling, in a try-catch-finally block, if there‚Äôs no error, does the Finally block still execute?
 YES
 
 8. How can you reference an external config file in web.config?
@@ -41,18 +41,15 @@ Reference Types are used by a reference which holds an (address) to the object b
 12. What is the difference between a Response.Redirect and Server.Transfer?
 Response.Redirect redirects page to another page after first page arrives to client. So client knows the redirection.  Server.Transfer quits current execution of the page. Client does not know the redirection. It allows you to transfer the query string and form variables.
 
-13. What are 3 different subtypes of ActionResult?
-ViewResult, PartialViewResult, RedirectToRouteResult, RedirectResult, JavascriptResult, JSONResult, FileResult, HttpStatusCodeResult
+13. How can a view be shared across multiple controllers?
+We can put the view in the ‚ÄúShared‚Äù folder.
 
-14. How can a view be shared across multiple controllers?
-We can put the view in the ìSharedî folder.
-
-15. What is a Generic Type Constraint in .NET? Give an example.
+14. What is a Generic Type Constraint in .NET? Give an example.
 Constraints inform the compiler about the capabilities a type argument must have.
 where T: class, where T: struct, where T: interface, where T: new()
 public class GenericList<T> where T : Employee
 
-16. By default, Web API sends HTTP response with which HTTP status code for all uncaught exceptions?
+15. By default, Web API sends HTTP response with which HTTP status code for all uncaught exceptions?
 500 - Internal Server Error
 
 
