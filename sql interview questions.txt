@@ -28,7 +28,7 @@ Multi-statement valued functions
 Collation is defined as a set of rules that determine how data can be sorted as well as compared.
 
 9. Suppose you have a table of Employees with a Salary column for each employee record and each Salary is different. How would you find the 2nd highest Salary?
-Select MAX(Salary) from Employees WHERE Salary NOT IN ( select MAX(Salary) from Employees.
+Select MAX(Salary) from Employees WHERE Salary NOT IN ( select MAX(Salary) from Employees).
 
 10. What is the difference between Union and Union All command?
 Union: It omits duplicate records and returns only distinct result set of two or more select statements.
