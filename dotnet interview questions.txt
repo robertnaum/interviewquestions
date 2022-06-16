@@ -31,7 +31,7 @@ Namespace can span multiple assemblies
 Namespace can logically groups class
 Assembly is a physical grouping of logical units
 
-10. Public is one of 5 access modifiers in .NET. Name the other 4.
+10. Public is one of 5 access modifiers in .NET. Name any other 2.
 Private, Protected, Internal, Protected Internal
 
 11. What is the difference between a Value Type and Reference Type?
@@ -52,8 +52,14 @@ public class GenericList<T> where T : Employee
 15. By default, Web API sends HTTP response with which HTTP status code for all uncaught exceptions?
 500 - Internal Server Error
 
+16. True or False, If an exception does not occur, the finally block in a try-catch will get executed.
+True
 
+17. What's the difference between the StringBuilder and String class?  When would you use one or the other?
+String is immutable and StringBuilder is mutable. When building a string in multiple steps, use StringBuilder.
 
+18. What is a Tuple?
+Data structures that hold object properties and contain a sequence of elements of different data types.
 
 
 
