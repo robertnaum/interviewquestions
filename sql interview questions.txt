@@ -48,7 +48,5 @@ SELECT TOP (1) Height FROM
 ) AS Mt ORDER BY Height
 
 
-FREEFORM
-Tell me what is your proudest project and what role did you play in that?
 
 
