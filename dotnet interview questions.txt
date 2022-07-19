@@ -2,8 +2,8 @@
 An abstract class is always used as a base class. 
 An interface, on the other hand, can declare properties, methods and events only (no access modifiers). The developer must implement all declared members. In short, an interface designates a contract/behavior that implementing classes should have.
 
-2. Define LINQ?
-LINQ stands for Language Integrated Query. Offers developers a way to manipulate data using a succinct yet expressive syntax
+2. What is a lambda expression in C#?  What is the lambda operator in C#?
+Lambda expressions in C# are used like anonymous functions, with the difference that in Lambda expressions you don't need to specify the type of the value that you input thus making it more flexible to use. The '=>' is the lambda operator which is used in all lambda expressions.
 
 3. How do you prevent a class from being inherited?
 In VB.NET you use the NotInheritable modifier to prevent programmers from using the class as a base class. In C#, use the sealed keyword.
@@ -22,8 +22,9 @@ DataSet - modify data, read/write, slower performance
 7. For error handling, in a try-catch-finally block, if there’s no error, does the Finally block still execute?
 YES
 
-8. How can you reference an external config file in web.config?
-configsource
+8. What is the role of ConfigureServices and Configure method?
+ConfigureServices method is optional and defined inside startup class as mentioned in above code. It gets called by the host before the 'Configure' method to configure the app's services.  
+Configure method is used to add middleware components to the IApplicationBuilder instance that's available in Configure method. Configure method also specifies how the app responds to HTTP request and response. ApplicationBuilder instance's 'Use...' extension method is used to add one or more middleware components to request pipeline.
 
 9. What is the difference between NameSpace and Assembly?
 A Namespace is a logical naming scheme for types in which a simple type name, such as MyType, is preceded with a dot-separated hierarchical name.  A single assembly may contain types whose hierarchical names have different namespace roots, and a logical namespace root may span multiple assemblies.
@@ -38,8 +39,10 @@ Private, Protected, Internal, Protected Internal
 A Value Type stores its contents in memory allocated on the stack. 
 Reference Types are used by a reference which holds an (address) to the object but not the object itself on the heap.
 
-12. What is the difference between a Response.Redirect and Server.Transfer?
-Response.Redirect redirects page to another page after first page arrives to client. So client knows the redirection.  Server.Transfer quits current execution of the page. Client does not know the redirection. It allows you to transfer the query string and form variables.
+12. When Services are registered, there is a lifetime for every service. ASP.NET Core provides the following lifetimes...
+Transient - Services with transient lifetime are created each time they are requested from service container. So it's best suited for stateless, light weight services.
+Scoped - Services with scoped lifetime are created once per connection or client request. When using scoped service in middleware then inject the service via invoke or invokeAsync method. You should not inject the service via constructor injection as it treats the service behavior like Singleton.
+Singleton - Service with singleton lifetime is created once when first time the service is requested. For subsequent requests same instance is served by service container.
 
 13. How can a view be shared across multiple controllers?
 We can put the view in the “Shared” folder.
@@ -49,7 +52,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 where T: class, where T: struct, where T: interface, where T: new()
 public class GenericList<T> where T : Employee
 
-15. By default, Web API sends HTTP response with which HTTP status code for all uncaught exceptions?
+15. By default, for all uncaught exceptions, which HTTP status code is sent?
 500 - Internal Server Error
 
 16. True or False, If an exception does not occur, the finally block in a try-catch will get executed.
@@ -61,6 +64,9 @@ String is immutable and StringBuilder is mutable. When building a string in mult
 18. What is a Tuple?
 Data structures that hold object properties and contain a sequence of elements of different data types.
 
+19. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
+Asynchronous actions won’t block the executing thread if it waits for an I/O operation. Using asynchronous actions can increase the throughput of a system if you use such a pattern for I/O operations, but it won’t help with CPU-bound operations.
 
-
+20. WebForms uses MasterPages as a template engine.  What does Razor Pages use?
+Razor Pages uses Layouts.
 
