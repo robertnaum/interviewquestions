@@ -3,7 +3,8 @@ An abstract class is always used as a base class.
 An interface, on the other hand, can declare properties, methods and events only (no access modifiers). The developer must implement all declared members. In short, an interface designates a contract/behavior that implementing classes should have.
 
 2. What is a lambda expression in C#?  What is the lambda operator in C#?
-Lambda expressions in C# are used like anonymous functions, with the difference that in Lambda expressions you don't need to specify the type of the value that you input thus making it more flexible to use. The '=>' is the lambda operator which is used in all lambda expressions.
+Lambda expressions in C# are used like anonymous functions, with the difference that in Lambda expressions you don't need to specify the type of the value that you input thus making it more flexible to use. 
+The '=>' is the lambda operator which is used in all lambda expressions.
 
 3. How do you prevent a class from being inherited?
 In VB.NET you use the NotInheritable modifier to prevent programmers from using the class as a base class. In C#, use the sealed keyword.
