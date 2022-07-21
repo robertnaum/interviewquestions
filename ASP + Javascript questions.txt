@@ -1,44 +1,27 @@
-1. What is the difference between Querystring collection and Form collection? 
-The main difference is that the Querystring collection gets appended to a URL.
-
-2. What is ServerVariables collection? 
-The ServerVariables collection holds the entire HTTP headers and also additional items of information about the server.
-
-3. Which is the default Data types in VBScript? 
-Variant is the default data type in VBScript, which can store a value of any type.
-
-4. What are the event handlers of Application Object? 
-Application_OnStart- This event will be fired when the first visitor hits the page.
-Application_OnEnd- This event runs when the server is stopped.
-
-5. What are 2 effects of using Option Explicit? 
-To avoid multiple variables of the same name. 
-This statement force the declaration of variables in VB before using them. 
-
-6. How do you clone an object in Javascript?
+1. How do you clone an object in Javascript?
 Object.assign() method is used for cloning an object in javascript
 var x = {myProp: "value"};
 var y = Object.assign({}, x); 
 	
-7. How do you redirect a URL in Javascript?
+2. How do you redirect a URL in Javascript?
 window.location.href
 
-8. What is 'this' keyword in Javascript?
+3. What is 'this' keyword in Javascript?
 'this' keyword refers to the object from where it was called.
 
-9. What is the use of the Push method in Javascript?
+4. What is the use of the Push method in Javascript?
 The push method is used to add or append one or more elements to an Array end.
 
-10. What is a callback in Javascript?
+5. What is a callback in Javascript?
 A callback is a function passed as an argument to another function.
 
-11. What is eval function in Javascript?
+6. What is eval function in Javascript?
 The eval() function evaluates Javascript code represented as a string.  //eval ("1 + 2");
 
-12. What is the use of preventDefault method?
+7. What is the use of preventDefault method?
 The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behavior that belongs to the event will not occur.
 
-13. Explain what javascript libraries you have used in the past
+8. Explain what javascript libraries you have used in the past
 [OPEN ENDED QUESTION]
 
 
