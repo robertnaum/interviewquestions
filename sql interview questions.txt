@@ -44,12 +44,5 @@ The OUTPUT clause returns the values of each row that was affected by an INSERT,
 13. Name 2 different ways to import data directly into SQL Server using T-SQL commands.
 BCP, Bulk Insert, OpenRowSet, OpenDataSource, OpenQuery, Linked Servers
 
-14. Assuming that there are 30 records in a table called "Mountain" with a column called "Height", how would you find the 10th tallest mountain.
-SELECT TOP (1) Height FROM
-(
-  SELECT TOP (10) Height FROM Mountain ORDER BY Height DESC
-) AS Mt ORDER BY Height
-
-
 
 
