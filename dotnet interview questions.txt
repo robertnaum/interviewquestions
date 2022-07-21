@@ -13,61 +13,58 @@ In VB.NET you use the NotInheritable modifier to prevent programmers from using 
 Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
 Overriding is a principle that allows you to change the functionality of a method in a child class.
 
-5. In MVC, what does the M, the V, and the C stand for and which is routed to first.
-Model, View, Controller(1st)
-
-6. What is the difference between DataReader and DataSet?
+5. What is the difference between DataReader and DataSet?
 DataReader - better performance, cannot modify data, read-only
 DataSet - modify data, read/write, slower performance
 
-7. For error handling, in a try-catch-finally block, if there’s no error, does the Finally block still execute?
+6. For error handling, in a try-catch-finally block, if there’s no error, does the Finally block still execute?
 YES
 
-8. What is the role of ConfigureServices and Configure method?
+7. What is the role of ConfigureServices and Configure method?
 ConfigureServices method is optional and defined inside startup class as mentioned in above code. It gets called by the host before the 'Configure' method to configure the app's services.  
 Configure method is used to add middleware components to the IApplicationBuilder instance that's available in Configure method. Configure method also specifies how the app responds to HTTP request and response. ApplicationBuilder instance's 'Use...' extension method is used to add one or more middleware components to request pipeline.
 
-9. What is the difference between NameSpace and Assembly?
+8. What is the difference between NameSpace and Assembly?
 A Namespace is a logical naming scheme for types in which a simple type name, such as MyType, is preceded with a dot-separated hierarchical name.  A single assembly may contain types whose hierarchical names have different namespace roots, and a logical namespace root may span multiple assemblies.
 Namespace can span multiple assemblies
 Namespace can logically groups class
 Assembly is a physical grouping of logical units
 
-10. Public is one of 5 access modifiers in .NET. Name any other 2.
+9. Public is one of 5 access modifiers in .NET. Name any other 2.
 Private, Protected, Internal, Protected Internal
 
-11. What is the difference between a Value Type and Reference Type?
+10. What is the difference between a Value Type and Reference Type?
 A Value Type stores its contents in memory allocated on the stack. 
 Reference Types are used by a reference which holds an (address) to the object but not the object itself on the heap.
 
-12. When Services are registered, there is a lifetime for every service. ASP.NET Core provides the following lifetimes...
+11. When Services are registered, there is a lifetime for every service. ASP.NET Core provides the following lifetimes...
 Transient - Services with transient lifetime are created each time they are requested from service container. So it's best suited for stateless, light weight services.
 Scoped - Services with scoped lifetime are created once per connection or client request. When using scoped service in middleware then inject the service via invoke or invokeAsync method. You should not inject the service via constructor injection as it treats the service behavior like Singleton.
 Singleton - Service with singleton lifetime is created once when first time the service is requested. For subsequent requests same instance is served by service container.
 
-13. How can a view be shared across multiple controllers?
+12. How can a view be shared across multiple controllers?
 We can put the view in the “Shared” folder.
 
-14. What is a Generic Type Constraint in .NET? Give an example.
+13. What is a Generic Type Constraint in .NET? Give an example.
 Constraints inform the compiler about the capabilities a type argument must have.
 where T: class, where T: struct, where T: interface, where T: new()
 public class GenericList<T> where T : Employee
 
-15. By default, for all uncaught exceptions, which HTTP status code is sent?
+14. By default, for all uncaught exceptions, which HTTP status code is sent?
 500 - Internal Server Error
 
-16. True or False, If an exception does not occur, the finally block in a try-catch will get executed.
+15. True or False, If an exception does not occur, the finally block in a try-catch will get executed.
 True
 
-17. What's the difference between the StringBuilder and String class?  When would you use one or the other?
+16. What's the difference between the StringBuilder and String class?  When would you use one or the other?
 String is immutable and StringBuilder is mutable. When building a string in multiple steps, use StringBuilder.
 
-18. What is a Tuple?
+17. What is a Tuple?
 Data structures that hold object properties and contain a sequence of elements of different data types.
 
-19. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
+18. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
 Asynchronous actions won’t block the executing thread if it waits for an I/O operation. Using asynchronous actions can increase the throughput of a system if you use such a pattern for I/O operations, but it won’t help with CPU-bound operations.
 
-20. WebForms uses MasterPages as a template engine.  What does Razor Pages use?
+19. WebForms uses MasterPages as a template engine.  What does Razor Pages use?
 Razor Pages uses Layouts.
 
