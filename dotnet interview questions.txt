@@ -53,18 +53,15 @@ public class GenericList<T> where T : Employee
 14. By default, for all uncaught exceptions, which HTTP status code is sent?
 500 - Internal Server Error
 
-15. True or False, If an exception does not occur, the finally block in a try-catch will get executed.
-True
-
-16. What's the difference between the StringBuilder and String class?  When would you use one or the other?
+15. What's the difference between the StringBuilder and String class?  When would you use one or the other?
 String is immutable and StringBuilder is mutable. When building a string in multiple steps, use StringBuilder.
 
-17. What is a Tuple?
+16. What is a Tuple?
 Data structures that hold object properties and contain a sequence of elements of different data types.
 
-18. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
+17. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
 Asynchronous actions won’t block the executing thread if it waits for an I/O operation. Using asynchronous actions can increase the throughput of a system if you use such a pattern for I/O operations, but it won’t help with CPU-bound operations.
 
-19. WebForms uses MasterPages as a template engine.  What does Razor Pages use?
+18. WebForms uses MasterPages as a template engine.  What does Razor Pages use?
 Razor Pages uses Layouts.
 
