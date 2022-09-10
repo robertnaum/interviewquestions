@@ -1,28 +1,21 @@
-1. How do you clone an object in Javascript?
-Object.assign() method is used for cloning an object in javascript
-var x = {myProp: "value"};
-var y = Object.assign({}, x); 
-	
-2. How do you redirect a URL in Javascript?
+1. How do you redirect a URL in Javascript?
 window.location.href
 
-3. What is 'this' keyword in Javascript?
+2. What is 'this' keyword in Javascript?
 'this' keyword refers to the object from where it was called.
 
-4. What is the use of the Push method in Javascript?
+3. What is the use of the Push method in Javascript?
 The push method is used to add or append one or more elements to an Array end.
 
-5. What is a callback in Javascript?
+4. What is a callback in Javascript?
 A callback is a function passed as an argument to another function.
 
-6. What is eval function in Javascript?
+5. What is eval function in Javascript?
 The eval() function evaluates Javascript code represented as a string.  //eval ("1 + 2");
 
-7. What is the use of preventDefault method?
+6. What is the use of preventDefault method?
 The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behavior that belongs to the event will not occur.
 
-8. Explain what javascript libraries you have used in the past
-[OPEN ENDED QUESTION]
 
 
 
