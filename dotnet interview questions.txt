@@ -50,7 +50,7 @@ Constraints inform the compiler about the capabilities a type argument must have
 where T: class, where T: struct, where T: interface, where T: new()
 public class GenericList<T> where T : Employee
 
-14. By default, for all uncaught exceptions, which HTTP status code is sent?
+14. Which HTTP status code is sent for all uncaught exceptions? (by default)
 500 - Internal Server Error
 
 15. What's the difference between the StringBuilder and String class?  When would you use one or the other?
