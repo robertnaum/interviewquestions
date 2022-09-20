@@ -44,5 +44,6 @@ The OUTPUT clause returns the values of each row that was affected by an INSERT,
 13. If you execute the following command in SQL Server, "select 4 + 3 + NULL", what result would you expect to receive?
 NULL
 
-
+14. if you execute the following command in SQL Server, "SELECT COUNT(100)", what result would you expect to receive?
+1
 
