@@ -41,8 +41,8 @@ SCOPE_IDENTITY() , IDENT_CURRENT, @@IDENTITY, OUTPUT INSERTED.ID
 12. What is the OUTPUT clause in SQL Server?
 The OUTPUT clause returns the values of each row that was affected by an INSERT, UPDATE, or DELETE statement. 
 
-13. Name 2 different ways to import data directly into SQL Server using T-SQL commands.
-BCP, Bulk Insert, OpenRowSet, OpenDataSource, OpenQuery, Linked Servers
+13. If you execute the following command in SQL Server, "select 4 + 3 + NULL", what result would you expect to receive?
+NULL
 
 
 
