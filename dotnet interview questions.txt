@@ -62,6 +62,6 @@ Data structures that hold object properties and contain a sequence of elements o
 17. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
 Asynchronous actions won’t block the executing thread if it waits for an I/O operation. Using asynchronous actions can increase the throughput of a system if you use such a pattern for I/O operations, but it won’t help with CPU-bound operations.
 
-18. Razor Pages use Layouts as their template engine.  Layouts are searched in specific locations in the web application.  Can you name them?
+18. Razor Pages use Layouts as their template engine.  By default, Layouts are searched in specific locations in the web application.  Can you name them?
 In the same directory as the calling page, all the way up the directory tree until the root Pages folder.  Also, Pages/Shared and Views/Shared folders.
 
