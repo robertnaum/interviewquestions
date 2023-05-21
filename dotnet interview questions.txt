@@ -13,12 +13,11 @@ In VB.NET you use the NotInheritable modifier to prevent programmers from using 
 Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
 Overriding is a principle that allows you to change the functionality of a method in a child class.
 
-5. What is the difference between DataReader and DataSet?
-DataReader - better performance, cannot modify data, read-only
-DataSet - modify data, read/write, slower performance
+5. How can a Dependency Injection container handle complex scenarios like circular dependencies or conditional dependency resolution?
+DI containers handle circular dependencies by allowing lazy initialization or proxying of dependencies, breaking the circular reference. They detect and resolve circular dependencies at runtime. For conditional dependency resolution, containers often provide mechanisms like named or keyed registrations, where dependencies can be registered with different keys or names and resolved based on specific conditions or configurations.
 
-6. For error handling, in a try-catch-finally block, if there’s no error, does the Finally block still execute?
-YES
+6. What is the purpose of the using statement in C#? How does it relate to IDisposable interface and resource management?
+The using statement ensures that the Dispose method of an object implementing the IDisposable interface is called, allowing for proper resource cleanup and management.
 
 7. What is the role of ConfigureServices and Configure method?
 ConfigureServices method is optional and defined inside startup class as mentioned in above code. It gets called by the host before the 'Configure' method to configure the app's services.  
@@ -30,8 +29,8 @@ Namespace can span multiple assemblies
 Namespace can logically groups class
 Assembly is a physical grouping of logical units
 
-9. Public is one of 5 access modifiers in .NET. Name any other 2.
-Private, Protected, Internal, Protected Internal
+9. What are the different ways to implement exception handling in C#? Explain the differences between try-catch, throw, and finally blocks, and when to use each of them.
+Try-catch blocks are used for exception handling, where the catch block handles specific exceptions thrown in the try block, and the finally block is used to execute code regardless of whether an exception occurred.
 
 10. What is the difference between a Value Type and Reference Type?
 A Value Type stores its contents in memory allocated on the stack. 
@@ -53,8 +52,8 @@ public class GenericList<T> where T : Employee
 14. Which HTTP status code is sent for all uncaught exceptions? (by default)
 500 - Internal Server Error
 
-15. What's the difference between the StringBuilder and String class?  When would you use one or the other?
-String is immutable and StringBuilder is mutable. When building a string in multiple steps, use StringBuilder.
+15. Question: Can you explain the difference between claims-based authentication and role-based authentication in ASP.NET Identity?
+Claims-based authentication in ASP.NET Identity revolves around the concept of claims, which are pieces of information about a user (such as name, email, or role). Claims are stored in a user's identity and can be used for authorization decisions throughout the application. Role-based authentication, on the other hand, focuses on assigning specific roles to users and granting or denying access based on those roles. 
 
 16. What is a Tuple?
 Data structures that hold object properties and contain a sequence of elements of different data types.
@@ -65,3 +64,5 @@ Asynchronous actions won’t block the executing thread if it waits for an I/O o
 18. Razor Pages use Layouts as their template engine.  By default, Layouts are searched in specific locations in the web application.  Can you name them?
 In the same directory as the calling page, all the way up the directory tree until the root Pages folder.  Also, Pages/Shared and Views/Shared folders.
 
+19. In Razor pages, what is the difference between the lowercase model keyword and the uppercase Model keyword?
+owercase model: The Lowercase model keyword refers to the instance of the model object that is passed to the Razor Page. It represents the model object itself and allows you to access its properties and methods within the Razor Page. Uppercase Model: The uppercase Model keyword is a property provided by the PageModel base class in Razor Pages. It represents the model object that is passed to the Razor Page.
