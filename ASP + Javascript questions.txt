@@ -1,19 +1,13 @@
-1. How do you redirect a URL in Javascript?
-window.location.href
-
-2. What is 'this' keyword in Javascript?
+1. What is 'this' keyword in Javascript?
 'this' keyword refers to the object from where it was called.
 
-3. What is the use of the Push method in Javascript?
+2. What is the use of the Push method in Javascript?
 The push method is used to add or append one or more elements to an Array end.
 
-4. What is a callback in Javascript?
-A callback is a function passed as an argument to another function.
-
-5. What is eval function in Javascript?
+3. What is eval function in Javascript?
 The eval() function evaluates Javascript code represented as a string.  //eval ("1 + 2");
 
-6. What is the use of preventDefault method?
+4. What is the use of preventDefault method?
 The preventDefault() method cancels the event if it is cancelable, meaning that the default action or behavior that belongs to the event will not occur.
 
 
