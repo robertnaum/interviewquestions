@@ -13,59 +13,46 @@ In VB.NET you use the NotInheritable modifier to prevent programmers from using 
 Overloading is when you have multiple methods in the same scope, with the same name but different signatures.
 Overriding is a principle that allows you to change the functionality of a method in a child class.
 
-5. How can a Dependency Injection container handle complex scenarios like circular dependencies or conditional dependency resolution?
-DI containers handle circular dependencies by allowing lazy initialization or proxying of dependencies, breaking the circular reference. They detect and resolve circular dependencies at runtime. For conditional dependency resolution, containers often provide mechanisms like named or keyed registrations, where dependencies can be registered with different keys or names and resolved based on specific conditions or configurations.
-
-6. What is the purpose of the using statement in C#? How does it relate to IDisposable interface and resource management?
+5. What is the purpose of the using statement in C#? 
 The using statement ensures that the Dispose method of an object implementing the IDisposable interface is called, allowing for proper resource cleanup and management.
 
-7. What is the role of ConfigureServices and Configure method?
-ConfigureServices method is optional and defined inside startup class as mentioned in above code. It gets called by the host before the 'Configure' method to configure the app's services.  
-Configure method is used to add middleware components to the IApplicationBuilder instance that's available in Configure method. Configure method also specifies how the app responds to HTTP request and response. ApplicationBuilder instance's 'Use...' extension method is used to add one or more middleware components to request pipeline.
-
-8. What is the difference between NameSpace and Assembly?
+6. What is the difference between NameSpace and Assembly?
 A Namespace is a logical naming scheme for types in which a simple type name, such as MyType, is preceded with a dot-separated hierarchical name.  A single assembly may contain types whose hierarchical names have different namespace roots, and a logical namespace root may span multiple assemblies.
 Namespace can span multiple assemblies
 Namespace can logically groups class
 Assembly is a physical grouping of logical units
 
-9. What are the different ways to implement exception handling in C#? Explain the differences between try-catch, throw, and finally blocks, and when to use each of them.
+7. What are the different ways to implement exception handling in C#?
 Try-catch blocks are used for exception handling, where the catch block handles specific exceptions thrown in the try block, and the finally block is used to execute code regardless of whether an exception occurred.
 
-10. What is the difference between a Value Type and Reference Type?
+8. What is the difference between a Value Type and Reference Type?
 A Value Type stores its contents in memory allocated on the stack. 
 Reference Types are used by a reference which holds an (address) to the object but not the object itself on the heap.
 
-11. When Services are registered, there is a lifetime for every service. ASP.NET Core provides the following lifetimes...
+9. When Services are registered, there is a lifetime for every service. ASP.NET Core provides the following lifetimes...
 Transient - Services with transient lifetime are created each time they are requested from service container. So it's best suited for stateless, light weight services.
 Scoped - Services with scoped lifetime are created once per connection or client request. When using scoped service in middleware then inject the service via invoke or invokeAsync method. You should not inject the service via constructor injection as it treats the service behavior like Singleton.
 Singleton - Service with singleton lifetime is created once when first time the service is requested. For subsequent requests same instance is served by service container.
 
-12. How can a view be shared across multiple controllers?
-We can put the view in the “Shared” folder.
-
-13. What is a Generic Type Constraint in .NET? Give an example.
+10. What is a Generic Type Constraint in .NET? Give an example.
 Constraints inform the compiler about the capabilities a type argument must have.
 where T: class, where T: struct, where T: interface, where T: new()
 public class GenericList<T> where T : Employee
 
-14. Which HTTP status code is sent for all uncaught exceptions? (by default)
+11. Which HTTP status code is sent for all uncaught exceptions? (by default)
 500 - Internal Server Error
 
-15. Question: Can you explain the difference between claims-based authentication and role-based authentication in ASP.NET Identity?
+12. Question: Can you explain the difference between claims-based authentication and role-based authentication in ASP.NET Identity?
 Claims-based authentication in ASP.NET Identity revolves around the concept of claims, which are pieces of information about a user (such as name, email, or role). Claims are stored in a user's identity and can be used for authorization decisions throughout the application. Role-based authentication, on the other hand, focuses on assigning specific roles to users and granting or denying access based on those roles. 
 
-16. What is a Tuple?
-Data structures that hold object properties and contain a sequence of elements of different data types.
-
-17. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
+13. What is the difference between asynchronous and synchronous actions? When would you use asynchronous actions?
 Asynchronous actions won’t block the executing thread if it waits for an I/O operation. Using asynchronous actions can increase the throughput of a system if you use such a pattern for I/O operations, but it won’t help with CPU-bound operations.
 
-18. Razor Pages use Layouts as their template engine.  By default, Layouts are searched in specific locations in the web application.  Can you name them?
+14. Razor Pages use Layouts as their template engine.  By default, Layouts are searched in specific locations in the web application.  Can you name them?
 In the same directory as the calling page, all the way up the directory tree until the root Pages folder.  Also, Pages/Shared and Views/Shared folders.
 
-19. In Razor pages, what is the difference between the lowercase model keyword and the uppercase Model keyword?
+15. In Razor pages, what is the difference between the lowercase model keyword and the uppercase Model keyword?
 owercase model: The Lowercase model keyword refers to the instance of the model object that is passed to the Razor Page. It represents the model object itself and allows you to access its properties and methods within the Razor Page. Uppercase Model: The uppercase Model keyword is a property provided by the PageModel base class in Razor Pages. It represents the model object that is passed to the Razor Page.
 
-20. In the Visual Studio debugger, what is the difference between the Step Into, Step Over, Step Out commands:
+16. In the Visual Studio debugger, what is the difference between the Step Into, Step Over, Step Out commands:
 These commands allow you to dive into methods, skip method calls, or return from a method.
