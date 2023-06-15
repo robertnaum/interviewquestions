@@ -4,17 +4,9 @@ Devops
 
 Dev Tools
 
-Do you have coworkers/mentor that you learn from?
-
 FREEFORM
 Talk about the most data intensive application that you created so far?  How was it built? What did it do?  How much data was involved?
-
-Can you give us an example of when you had to work with someone who was difficult? How did you handle the situation?
 
 How would you explain a complex topic to a new customer or a colleague?
 
 How do you prioritize your tasks when you have multiple deadlines to meet?
-
-Describe a situation where results went against your expectations. How did you adapt to this change?
-
-Tell us something about yourself that we would not be able to guess.
