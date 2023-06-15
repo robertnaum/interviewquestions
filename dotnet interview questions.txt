@@ -52,7 +52,7 @@ Asynchronous actions won’t block the executing thread if it waits for an I/O o
 In the same directory as the calling page, all the way up the directory tree until the root Pages folder.  Also, Pages/Shared and Views/Shared folders.
 
 15. In Razor pages, what is the difference between the lowercase model keyword and the uppercase Model keyword?
-owercase model: The Lowercase model keyword refers to the instance of the model object that is passed to the Razor Page. It represents the model object itself and allows you to access its properties and methods within the Razor Page. Uppercase Model: The uppercase Model keyword is a property provided by the PageModel base class in Razor Pages. It represents the model object that is passed to the Razor Page.
+The Lowercase model keyword refers to the instance of the model object that is passed to the Razor Page. It represents the model object itself and allows you to access its properties and methods within the Razor Page. The uppercase Model keyword is a property provided by the PageModel base class in Razor Pages. It represents the model object that is passed to the Razor Page.
 
 16. In the Visual Studio debugger, what is the difference between the Step Into, Step Over, Step Out commands:
 These commands allow you to dive into methods, skip method calls, or return from a method.
